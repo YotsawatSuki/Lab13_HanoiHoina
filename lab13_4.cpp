@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template <typename typeV>
+void mySwap(typeV&,typeV&);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +33,10 @@ int main(){
 	return 0;
 }
 
+template<typename Ajax>
+void mySwap(Ajax&j,Ajax&k){
+	Ajax M = j;
+	Ajax N = k;
+	j = N;
+	k = M;
+}
